@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+
+    <title>Doe vida, doe sangue!</title>
+
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+    <header>
+
+        <img
+            class="logo" 
+            src="EloGroup.png" 
+            alt="Imagem EloGroup">
+        <h2>Prova Técnica</h2>
+        <p>Desafio do processo seletivo da EloGroup</p>
+        <button>Quero Participar!</button>
+
+    </header>
+
+    <section class="form hide">
+
+        <h2>Entre na lista do processo seletivo</h2>
+
+        <form action="/" method="POST">
+
+            <label>Digite seu nome</label>
+            <input
+                type="text"
+                name="name"
+                placeholder="Nome Completo"
+            >
+
+            <label>Digite seu telefone</label>
+            <input
+                type="text"
+                name="telefone"
+                placeholder="Telefone"
+            >
+            
+            <label>Como conheceu a EloGroup?</label>
+            <select id="conheceu" name="conheceu">
+
+                <option value="tv">TV</option>
+                <option value="internet">Internet</option>
+                <option value="outros">Outros</option>
+            
+            </select>
+
+            <label>Possui rede social?</label>
+            <label class="container">Sim
+                <input
+                    type="radio"
+                    id="sim"
+                    name="social"
+                    value="sim"
+                >
+            </label>
+
+            <label class="container">Não
+                <input
+                    type="radio"
+                    id="nao"
+                    name="social"
+                    value="nao"
+                >
+            </label>
+
+            <button>Enviar</button>
+
+        </form>
+
+    </section>
+
+    <footer>Prova Técnica EloGroup. Isaac Borges Mota</footer>
+
+    <script src="/scripts.js"></script>
+
+</body>
+
+</html>
