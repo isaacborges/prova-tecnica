@@ -4,7 +4,7 @@
 
 <head>
 
-    <title>Doe vida, doe sangue!</title>
+    <title>Processo EloGroup, venha participar!</title>
 
     <link rel="stylesheet" href="style.css">
     <link href="https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap" rel="stylesheet">
@@ -28,11 +28,12 @@
 
         <h2>Entre na lista do processo seletivo</h2>
 
-        <form action="/" method="POST">
+        <form action="/" method="POST" onsubmit="return formValidation()">
 
             <label>Digite seu nome</label>
             <input
                 type="text"
+                id="name"
                 name="name"
                 placeholder="Nome Completo"
             >
@@ -40,6 +41,7 @@
             <label>Digite seu telefone</label>
             <input
                 type="text"
+                id="telefone"
                 name="telefone"
                 placeholder="Telefone"
             >
@@ -71,6 +73,24 @@
                     value="nao"
                 >
             </label>
+
+            <section class="check hide">
+                <label>Quais?</label>
+                <label class="container">Facebook
+                    <input type="checkbox">
+                    <span class="checkmark"></span>
+                </label>
+
+                <label class="container">LinkedIn
+                    <input type="checkbox">
+                    <span class="checkmark"></span>
+                </label>
+
+                <label class="container">Instagram
+                    <input type="checkbox">
+                    <span class="checkmark"></span>
+                </label>
+            </section>
 
             <button>Enviar</button>
 
