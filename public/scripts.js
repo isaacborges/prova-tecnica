@@ -43,4 +43,16 @@ const formValidation = () => {
             document.querySelector('input#name').focus();
             return false;
         }
+
+        if (document.querySelector('#input#sim').checked === false && document.querySelector('#input#nao').checked === false) {
+            alert('Informe se você possui alguma rede social!');
+            return false;
+        }
+
+        if (document.querySelector('#input#sim').checked === true) {
+            if (document.querySelector('input#facebook').checked === false && document.querySelector('input#linkedin').checked === false && document.querySelector('input#instagram').checked === false) {
+                alert('Informe quais redes sociais que possui');
+                return false;
+            }
+        }
 }

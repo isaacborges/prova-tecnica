@@ -25,6 +25,14 @@ server.post("/", function(req, res){
     const name = req.body.name
     const telefone = req.body.telefone
     const conheceu = [req.body.conheceu]
+    const socialMedia = [req.body.facebook, req.body.linkedin, req.body.instagram]
+
+    res.json({
+        name,
+        telefone,
+        conheceu,
+        socialMedia
+    })
 
     return res.redirect("/")
 })
