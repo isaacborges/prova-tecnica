@@ -1,12 +1,8 @@
 # Detalhes da solução
 
----
-
 ## Usuário na plataforma Gupy 
 
 ### Isaac Borges Mota
-
----
 
 ## Tecnologias utilizadas
 
@@ -17,8 +13,6 @@
 * CSS
 * Visual Studio Code
 
----
-
 ## Execução
 
 ```
@@ -26,8 +20,6 @@ git clone https://github.com/isaacborges/prova-tecnica.git
 npm install
 npm start
 ```
-
----
 
 ## Hierárquia
 
